@@ -210,7 +210,7 @@
                             '<i class="tree-branch-head" ng-class="iBranchClass()" ng-click="selectNodeHead(node)"></i>' +
                             '<i class="tree-leaf-head '+classIfDefined($scope.options.injectClasses.iLeaf, false)+'"></i>' +
                             '<div class="tree-label '+classIfDefined($scope.options.injectClasses.label, false)+'" ng-class="selectedClass()" ng-click="selectNodeLabel(node)" tree-transclude></div>' +
-                            '<treeitem ng-if="nodeExpanded()"></treeitem>' +
+                            '<div treeitem ng-if="nodeExpanded()"></div>' +
                             '</li>' +
                             '</ul>';
 
@@ -281,7 +281,7 @@
         }])
         .directive("treeitem", function() {
             return {
-                restrict: 'E',
+                restrict: 'A',
                 require: "^treecontrol",
                 link: function( scope, element, attrs, treemodelCntr) {
                     // Rendering template for the current node

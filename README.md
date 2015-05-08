@@ -154,7 +154,7 @@ The angular-tree-control renders to the following DOM structure
       <div class="tree-label">
          ... label - expanded angular template is in the treecontrol element ...
       </div>
-      <treeitem>
+      <div treeitem>
         <ul>
           <li class="tree-leaf">
             <i class="tree-branch-head"></i>
@@ -171,7 +171,7 @@ The angular-tree-control renders to the following DOM structure
             </div>
           </li>
         </ul>
-      </treeitem>
+      </div>
     </li>
   </ul>
 </treecontrol>
