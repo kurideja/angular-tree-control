@@ -184,7 +184,7 @@
                   $scope.selectedNodes.splice(pos, 1);
                 }
               } else {
-                if (!$scope.options.equality(selectedNode, $scope.selectedNode)) {
+                if (!$scope.options.equality(selectedNode, $scope.selectedNode) || $scope.options.expandSelected) {
                   $scope.selectedNode = selectedNode;
                   selected = true;
                 }
@@ -192,7 +192,7 @@
                   $scope.selectedNode = undefined;
                 }
               }
-              if ($scope.onSelection)
+              if ($scope.onSelection && $scope.expandedNodes.indexOf(selectedNode) !== -1)
                 $scope.onSelection({node: selectedNode, selected: selected});
             }
           };
@@ -212,13 +212,12 @@
           var template =
                 '<div class="tree-branch-ul"' + classIfDefined($scope.options.injectClasses.ul, true) + '>' +
                 '<div class="tree-branch-li" ng-repeat="node in node.' + $scope.options.nodeChildren + ' | filter:filterExpression:filterComparator ' + orderBy + '" ng-class="headClass(node)" ' + classIfDefined($scope.options.injectClasses.li, true) + '>' +
-                '<div ng-class="selectedClass()">' +
+                '<div ng-class="selectedClass()" ng-click="selectNodeLabel(node)">' +
                 '<span class="tree-indentation-block" ng-style="{\'width\': \' {{((node.level || 0) + 1) * options.indentation}}px\' }"></span>' +
-                '<span class="tree-branch-li-bg" ng-click="selectNodeLabel(node)"></span>' +
-                '<i class="tree-branch-caret" ng-click="selectNodeHead(node)"></i>' +
-                '<i class="tree-branch-head" ng-class="iBranchClass()" ng-click="selectNodeHead(node)"></i>' +
+                '<i class="tree-branch-caret"></i>' +
+                '<i class="tree-branch-head" ng-class="iBranchClass()"></i>' +
                 '<i class="tree-leaf-head ' + classIfDefined($scope.options.injectClasses.iLeaf, false) + '"></i>' +
-                '<div class="tree-label ' + classIfDefined($scope.options.injectClasses.label, false) + '" ng-click="selectNodeLabel(node)" tree-transclude></div>' +
+                '<div class="tree-label ' + classIfDefined($scope.options.injectClasses.label, false) + '" tree-transclude></div>' +
                 '</div>' +
                 '<div treeitem ng-if="nodeExpanded()"></div>' +
                 '</div>' +
