@@ -165,6 +165,10 @@
             }
             else {
               var selected = false;
+
+              if($scope.options.expandSelected) {
+                this.selectNodeHead();
+              }
               if ($scope.options.multiSelection) {
                 var pos = -1;
                 for (var i = 0; i < $scope.selectedNodes.length; i++) {
@@ -210,7 +214,7 @@
                 '<div class="tree-branch-li" ng-repeat="node in node.' + $scope.options.nodeChildren + ' | filter:filterExpression:filterComparator ' + orderBy + '" ng-class="headClass(node)" ' + classIfDefined($scope.options.injectClasses.li, true) + '>' +
                 '<div ng-class="selectedClass()">' +
                 '<span class="tree-indentation-block" ng-style="{\'width\': \' {{((node.level || 0) + 1) * options.indentation}}px\' }"></span>' +
-                '<span class="tree-branch-li-bg"></span>' +
+                '<span class="tree-branch-li-bg" ng-click="selectNodeLabel(node)"></span>' +
                 '<i class="tree-branch-caret" ng-click="selectNodeHead(node)"></i>' +
                 '<i class="tree-branch-head" ng-class="iBranchClass()" ng-click="selectNodeHead(node)"></i>' +
                 '<i class="tree-leaf-head ' + classIfDefined($scope.options.injectClasses.iLeaf, false) + '"></i>' +
