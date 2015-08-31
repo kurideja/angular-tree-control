@@ -92,6 +92,7 @@
           ensureDefault($scope.options, "equality", defaultEquality);
           ensureDefault($scope.options, "isLeaf", defaultIsLeaf);
           ensureDefault($scope.options, "indentation", 10);
+          ensureDefault($scope.options, "allowDeselect", true);
 
           $scope.selectedNodes = $scope.selectedNodes || [];
           $scope.expandedNodes = $scope.expandedNodes || [];
@@ -139,8 +140,11 @@
             return !!$scope.expandedNodesMap[this.$id];
           };
 
-          $scope.selectNodeHead = function () {
+          $scope.selectNodeHead = function (node, $event) {
             var expanding = $scope.expandedNodesMap[this.$id] === undefined;
+            if($event) {
+              $event.stopPropagation();
+            }
             $scope.expandedNodesMap[this.$id] = (expanding ? this.node : undefined);
             if (expanding) {
               $scope.expandedNodes.push(this.node);
@@ -162,14 +166,8 @@
           $scope.selectNodeLabel = function (selectedNode) {
             if (selectedNode[$scope.options.nodeChildren] && selectedNode[$scope.options.nodeChildren].length > 0 && !$scope.options.dirSelectable) {
               this.selectNodeHead();
-            }
-            else {
+            } else {
               var selected = false;
-              var wasSelected = false;
-
-              if($scope.options.expandSelected) {
-                this.selectNodeHead();
-              }
               if ($scope.options.multiSelection) {
                 var pos = -1;
                 for (var i = 0; i < $scope.selectedNodes.length; i++) {
@@ -184,11 +182,11 @@
                 } else {
                   $scope.selectedNodes.splice(pos, 1);
                 }
+              } else if ($scope.options.equality(selectedNode, $scope.selectedNode) && !$scope.options.allowDeselect) {
+                $scope.selectedNode = selectedNode;
+                this.selectNodeHead(selectedNode);
               } else {
-
-                wasSelected = $scope.options.equality(selectedNode, $scope.selectedNode);
-
-                if (!wasSelected || $scope.options.expandSelected) {
+                if (!$scope.options.equality(selectedNode, $scope.selectedNode)) {
                   $scope.selectedNode = selectedNode;
                   selected = true;
                 }
@@ -196,7 +194,7 @@
                   $scope.selectedNode = undefined;
                 }
               }
-              if ($scope.onSelection && !wasSelected)
+              if ($scope.onSelection)
                 $scope.onSelection({node: selectedNode, selected: selected});
             }
           };
@@ -205,10 +203,18 @@
             var isThisNodeSelected = isSelectedNode(this.node);
             var labelSelectionClass = classIfDefined($scope.options.injectClasses.labelSelected, false);
             var injectSelectionClass = "";
-            if (labelSelectionClass && isThisNodeSelected)
+            if (labelSelectionClass && isThisNodeSelected) {
               injectSelectionClass = " " + labelSelectionClass;
+            }
 
             return isThisNodeSelected ? "tree-selected" + injectSelectionClass : "";
+          };
+
+          $scope.doNothing = function ($event) {
+            if($event) {
+              $event.preventDefault();
+              $event.stopImmediatePropagation();
+            }
           };
 
           //tree template
@@ -217,11 +223,15 @@
                 '<div class="tree-branch-ul"' + classIfDefined($scope.options.injectClasses.ul, true) + '>' +
                 '<div class="tree-branch-li" ng-repeat="node in node.' + $scope.options.nodeChildren + ' | filter:filterExpression:filterComparator ' + orderBy + '" ng-class="headClass(node)" ' + classIfDefined($scope.options.injectClasses.li, true) + '>' +
                 '<div class="tree-item" ng-class="selectedClass()" ng-click="selectNodeLabel(node)">' +
-                '<span class="tree-indentation-block" ng-style="{\'width\': \' {{((node.level || 0) + 1) * options.indentation}}px\' }"></span>' +
+                '<span class="tree-indentation-block"' +
+                ' ng-style="{\'width\': \' {{((node.level || 0) + 1) * options.indentation}}px\' }"' +
+                ' ng-dblclick="selectNodeHead(node, $event)" ng-click="doNothing($event)"></span>' +
+                '<span class="caret-container" ng-click="selectNodeHead(node, $event)">' +
                 '<i class="tree-branch-caret"></i>' +
+                '</span>' +
                 '<i class="tree-branch-head" ng-class="iBranchClass()"></i>' +
                 '<i class="tree-leaf-head ' + classIfDefined($scope.options.injectClasses.iLeaf, false) + '"></i>' +
-                '<div class="tree-label ' + classIfDefined($scope.options.injectClasses.label, false) + '" tree-transclude></div>' +
+                '<div class="tree-label ' + classIfDefined($scope.options.injectClasses.label, false) + '"tree-transclude></div>' +
                 '</div>' +
                 '<div treeitem ng-if="nodeExpanded()"></div>' +
                 '</div>' +
@@ -311,7 +321,9 @@
             angular.forEach(scope.expandedNodesMap, function (node, id) {
               if (scope.options.equality(node, scope.node)) {
                 scope.expandedNodesMap[scope.$id] = scope.node;
-                scope.expandedNodesMap[id] = undefined;
+                if(scope.$id !== id) {
+                  scope.expandedNodesMap[id] = undefined;
+                }
               }
             });
           }
