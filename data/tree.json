@@ -1,0 +1,2379 @@
+[
+  {
+    "id": 1,
+    "parentId": null,
+    "name": "root company",
+    "createdAt": "2016-04-14T10:05:36+02:00",
+    "updatedAt": null,
+    "left": 1,
+    "level": 0,
+    "right": 382,
+    "root": 1,
+    "__children": [
+      {
+        "id": 148,
+        "parentId": 1,
+        "name": "A",
+        "createdAt": "2016-04-19T13:22:30+02:00",
+        "updatedAt": null,
+        "left": 2,
+        "level": 1,
+        "right": 113,
+        "root": 1,
+        "__children": [
+          {
+            "id": 346,
+            "parentId": 148,
+            "name": "asd",
+            "createdAt": "2016-04-21T13:29:38+02:00",
+            "updatedAt": null,
+            "left": 3,
+            "level": 2,
+            "right": 76,
+            "root": 1,
+            "__children": [
+              {
+                "id": 383,
+                "parentId": 346,
+                "name": "dummy-data",
+                "createdAt": "2016-04-21T13:54:26+02:00",
+                "updatedAt": null,
+                "left": 4,
+                "level": 3,
+                "right": 75,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 384,
+                    "parentId": 383,
+                    "name": "CognitoIdentity",
+                    "createdAt": "2016-04-21T13:54:29+02:00",
+                    "updatedAt": null,
+                    "left": 5,
+                    "level": 4,
+                    "right": 8,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 400,
+                        "parentId": 384,
+                        "name": "Exception",
+                        "createdAt": "2016-04-21T13:54:35+02:00",
+                        "updatedAt": null,
+                        "left": 6,
+                        "level": 5,
+                        "right": 7,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 385,
+                    "parentId": 383,
+                    "name": "CognitoSync",
+                    "createdAt": "2016-04-21T13:54:29+02:00",
+                    "updatedAt": null,
+                    "left": 9,
+                    "level": 4,
+                    "right": 12,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 402,
+                        "parentId": 385,
+                        "name": "Exception",
+                        "createdAt": "2016-04-21T13:54:37+02:00",
+                        "updatedAt": null,
+                        "left": 10,
+                        "level": 5,
+                        "right": 11,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 386,
+                    "parentId": 383,
+                    "name": "CodePipeline",
+                    "createdAt": "2016-04-21T13:54:29+02:00",
+                    "updatedAt": null,
+                    "left": 13,
+                    "level": 4,
+                    "right": 16,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 401,
+                        "parentId": 386,
+                        "name": "Exception",
+                        "createdAt": "2016-04-21T13:54:37+02:00",
+                        "updatedAt": null,
+                        "left": 14,
+                        "level": 5,
+                        "right": 15,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 387,
+                    "parentId": 383,
+                    "name": "CloudWatch",
+                    "createdAt": "2016-04-21T13:54:29+02:00",
+                    "updatedAt": null,
+                    "left": 17,
+                    "level": 4,
+                    "right": 20,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 404,
+                        "parentId": 387,
+                        "name": "Exception",
+                        "createdAt": "2016-04-21T13:54:37+02:00",
+                        "updatedAt": null,
+                        "left": 18,
+                        "level": 5,
+                        "right": 19,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 388,
+                    "parentId": 383,
+                    "name": "AutoScaling",
+                    "createdAt": "2016-04-21T13:54:29+02:00",
+                    "updatedAt": null,
+                    "left": 21,
+                    "level": 4,
+                    "right": 24,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 403,
+                        "parentId": 388,
+                        "name": "Exception",
+                        "createdAt": "2016-04-21T13:54:37+02:00",
+                        "updatedAt": null,
+                        "left": 22,
+                        "level": 5,
+                        "right": 23,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 389,
+                    "parentId": 383,
+                    "name": "CloudSearchDomain",
+                    "createdAt": "2016-04-21T13:54:30+02:00",
+                    "updatedAt": null,
+                    "left": 25,
+                    "level": 4,
+                    "right": 28,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 405,
+                        "parentId": 389,
+                        "name": "Exception",
+                        "createdAt": "2016-04-21T13:54:38+02:00",
+                        "updatedAt": null,
+                        "left": 26,
+                        "level": 5,
+                        "right": 27,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 390,
+                    "parentId": 383,
+                    "name": "ConfigService",
+                    "createdAt": "2016-04-21T13:54:31+02:00",
+                    "updatedAt": null,
+                    "left": 29,
+                    "level": 4,
+                    "right": 32,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 406,
+                        "parentId": 390,
+                        "name": "Exception",
+                        "createdAt": "2016-04-21T13:54:38+02:00",
+                        "updatedAt": null,
+                        "left": 30,
+                        "level": 5,
+                        "right": 31,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 391,
+                    "parentId": 383,
+                    "name": "CodeDeploy",
+                    "createdAt": "2016-04-21T13:54:31+02:00",
+                    "updatedAt": null,
+                    "left": 33,
+                    "level": 4,
+                    "right": 36,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 408,
+                        "parentId": 391,
+                        "name": "Exception",
+                        "createdAt": "2016-04-21T13:54:40+02:00",
+                        "updatedAt": null,
+                        "left": 34,
+                        "level": 5,
+                        "right": 35,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 392,
+                    "parentId": 383,
+                    "name": "CloudHsm",
+                    "createdAt": "2016-04-21T13:54:32+02:00",
+                    "updatedAt": null,
+                    "left": 37,
+                    "level": 4,
+                    "right": 40,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 409,
+                        "parentId": 392,
+                        "name": "Exception",
+                        "createdAt": "2016-04-21T13:54:40+02:00",
+                        "updatedAt": null,
+                        "left": 38,
+                        "level": 5,
+                        "right": 39,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 393,
+                    "parentId": 383,
+                    "name": "CloudFront",
+                    "createdAt": "2016-04-21T13:54:32+02:00",
+                    "updatedAt": null,
+                    "left": 41,
+                    "level": 4,
+                    "right": 44,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 407,
+                        "parentId": 393,
+                        "name": "Exception",
+                        "createdAt": "2016-04-21T13:54:40+02:00",
+                        "updatedAt": null,
+                        "left": 42,
+                        "level": 5,
+                        "right": 43,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 394,
+                    "parentId": 383,
+                    "name": "CloudTrail",
+                    "createdAt": "2016-04-21T13:54:32+02:00",
+                    "updatedAt": null,
+                    "left": 45,
+                    "level": 4,
+                    "right": 48,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 410,
+                        "parentId": 394,
+                        "name": "Exception",
+                        "createdAt": "2016-04-21T13:54:41+02:00",
+                        "updatedAt": null,
+                        "left": 46,
+                        "level": 5,
+                        "right": 47,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 395,
+                    "parentId": 383,
+                    "name": "CloudFormation",
+                    "createdAt": "2016-04-21T13:54:32+02:00",
+                    "updatedAt": null,
+                    "left": 49,
+                    "level": 4,
+                    "right": 52,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 411,
+                        "parentId": 395,
+                        "name": "Exception",
+                        "createdAt": "2016-04-21T13:54:41+02:00",
+                        "updatedAt": null,
+                        "left": 50,
+                        "level": 5,
+                        "right": 51,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 396,
+                    "parentId": 383,
+                    "name": "CloudSearch",
+                    "createdAt": "2016-04-21T13:54:34+02:00",
+                    "updatedAt": null,
+                    "left": 53,
+                    "level": 4,
+                    "right": 56,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 412,
+                        "parentId": 396,
+                        "name": "Exception",
+                        "createdAt": "2016-04-21T13:54:41+02:00",
+                        "updatedAt": null,
+                        "left": 54,
+                        "level": 5,
+                        "right": 55,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 397,
+                    "parentId": 383,
+                    "name": "Api",
+                    "createdAt": "2016-04-21T13:54:34+02:00",
+                    "updatedAt": null,
+                    "left": 57,
+                    "level": 4,
+                    "right": 66,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 413,
+                        "parentId": 397,
+                        "name": "ErrorParser",
+                        "createdAt": "2016-04-21T13:54:43+02:00",
+                        "updatedAt": null,
+                        "left": 58,
+                        "level": 5,
+                        "right": 59,
+                        "root": 1,
+                        "__children": []
+                      },
+                      {
+                        "id": 414,
+                        "parentId": 397,
+                        "name": "Serializer",
+                        "createdAt": "2016-04-21T13:54:43+02:00",
+                        "updatedAt": null,
+                        "left": 60,
+                        "level": 5,
+                        "right": 61,
+                        "root": 1,
+                        "__children": []
+                      },
+                      {
+                        "id": 415,
+                        "parentId": 397,
+                        "name": "Parser",
+                        "createdAt": "2016-04-21T13:54:43+02:00",
+                        "updatedAt": null,
+                        "left": 62,
+                        "level": 5,
+                        "right": 65,
+                        "root": 1,
+                        "__children": [
+                          {
+                            "id": 418,
+                            "parentId": 415,
+                            "name": "Exception",
+                            "createdAt": "2016-04-21T13:54:47+02:00",
+                            "updatedAt": null,
+                            "left": 63,
+                            "level": 6,
+                            "right": 64,
+                            "root": 1,
+                            "__children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": 398,
+                    "parentId": 383,
+                    "name": "CodeCommit",
+                    "createdAt": "2016-04-21T13:54:35+02:00",
+                    "updatedAt": null,
+                    "left": 67,
+                    "level": 4,
+                    "right": 70,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 416,
+                        "parentId": 398,
+                        "name": "Exception",
+                        "createdAt": "2016-04-21T13:54:44+02:00",
+                        "updatedAt": null,
+                        "left": 68,
+                        "level": 5,
+                        "right": 69,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 399,
+                    "parentId": 383,
+                    "name": "CloudWatchLogs",
+                    "createdAt": "2016-04-21T13:54:35+02:00",
+                    "updatedAt": null,
+                    "left": 71,
+                    "level": 4,
+                    "right": 74,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 417,
+                        "parentId": 399,
+                        "name": "Exception",
+                        "createdAt": "2016-04-21T13:54:44+02:00",
+                        "updatedAt": null,
+                        "left": 72,
+                        "level": 5,
+                        "right": 73,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 1030,
+            "parentId": 148,
+            "name": "dummy-data",
+            "createdAt": "2016-04-22T06:46:42+02:00",
+            "updatedAt": null,
+            "left": 77,
+            "level": 2,
+            "right": 112,
+            "root": 1,
+            "__children": [
+              {
+                "id": 1031,
+                "parentId": 1030,
+                "name": "dummy-data",
+                "createdAt": "2016-04-22T06:46:43+02:00",
+                "updatedAt": null,
+                "left": 78,
+                "level": 3,
+                "right": 111,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1032,
+                    "parentId": 1031,
+                    "name": "CodeDeploy",
+                    "createdAt": "2016-04-22T06:48:41+02:00",
+                    "updatedAt": null,
+                    "left": 79,
+                    "level": 4,
+                    "right": 80,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1033,
+                    "parentId": 1031,
+                    "name": "CloudSearch",
+                    "createdAt": "2016-04-22T06:48:41+02:00",
+                    "updatedAt": null,
+                    "left": 81,
+                    "level": 4,
+                    "right": 82,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1034,
+                    "parentId": 1031,
+                    "name": "CloudTrail",
+                    "createdAt": "2016-04-22T06:48:42+02:00",
+                    "updatedAt": null,
+                    "left": 83,
+                    "level": 4,
+                    "right": 84,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1035,
+                    "parentId": 1031,
+                    "name": "Api",
+                    "createdAt": "2016-04-22T06:48:43+02:00",
+                    "updatedAt": null,
+                    "left": 85,
+                    "level": 4,
+                    "right": 86,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1036,
+                    "parentId": 1031,
+                    "name": "CloudFront",
+                    "createdAt": "2016-04-22T06:48:43+02:00",
+                    "updatedAt": null,
+                    "left": 87,
+                    "level": 4,
+                    "right": 88,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1037,
+                    "parentId": 1031,
+                    "name": "CloudFormation",
+                    "createdAt": "2016-04-22T06:48:43+02:00",
+                    "updatedAt": null,
+                    "left": 89,
+                    "level": 4,
+                    "right": 90,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1038,
+                    "parentId": 1031,
+                    "name": "CloudHsm",
+                    "createdAt": "2016-04-22T06:48:43+02:00",
+                    "updatedAt": null,
+                    "left": 91,
+                    "level": 4,
+                    "right": 92,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1039,
+                    "parentId": 1031,
+                    "name": "ConfigService",
+                    "createdAt": "2016-04-22T06:48:44+02:00",
+                    "updatedAt": null,
+                    "left": 93,
+                    "level": 4,
+                    "right": 94,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1040,
+                    "parentId": 1031,
+                    "name": "CloudWatchLogs",
+                    "createdAt": "2016-04-22T06:48:44+02:00",
+                    "updatedAt": null,
+                    "left": 95,
+                    "level": 4,
+                    "right": 96,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1041,
+                    "parentId": 1031,
+                    "name": "CodeCommit",
+                    "createdAt": "2016-04-22T06:48:45+02:00",
+                    "updatedAt": null,
+                    "left": 97,
+                    "level": 4,
+                    "right": 98,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1042,
+                    "parentId": 1031,
+                    "name": "CloudSearchDomain",
+                    "createdAt": "2016-04-22T06:48:45+02:00",
+                    "updatedAt": null,
+                    "left": 99,
+                    "level": 4,
+                    "right": 100,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1043,
+                    "parentId": 1031,
+                    "name": "AutoScaling",
+                    "createdAt": "2016-04-22T06:48:45+02:00",
+                    "updatedAt": null,
+                    "left": 101,
+                    "level": 4,
+                    "right": 102,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1044,
+                    "parentId": 1031,
+                    "name": "CodePipeline",
+                    "createdAt": "2016-04-22T06:48:46+02:00",
+                    "updatedAt": null,
+                    "left": 103,
+                    "level": 4,
+                    "right": 104,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1045,
+                    "parentId": 1031,
+                    "name": "CognitoSync",
+                    "createdAt": "2016-04-22T06:48:46+02:00",
+                    "updatedAt": null,
+                    "left": 105,
+                    "level": 4,
+                    "right": 106,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1046,
+                    "parentId": 1031,
+                    "name": "CognitoIdentity",
+                    "createdAt": "2016-04-22T06:48:46+02:00",
+                    "updatedAt": null,
+                    "left": 107,
+                    "level": 4,
+                    "right": 108,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1047,
+                    "parentId": 1031,
+                    "name": "CloudWatch",
+                    "createdAt": "2016-04-22T06:48:47+02:00",
+                    "updatedAt": null,
+                    "left": 109,
+                    "level": 4,
+                    "right": 110,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 188,
+        "parentId": 1,
+        "name": "B",
+        "createdAt": "2016-04-21T09:02:04+02:00",
+        "updatedAt": null,
+        "left": 114,
+        "level": 1,
+        "right": 307,
+        "root": 1,
+        "__children": [
+          {
+            "id": 918,
+            "parentId": 188,
+            "name": "Untitled Folder",
+            "createdAt": "2016-04-21T17:40:04+02:00",
+            "updatedAt": null,
+            "left": 115,
+            "level": 2,
+            "right": 188,
+            "root": 1,
+            "__children": [
+              {
+                "id": 1535,
+                "parentId": 918,
+                "name": "dummy-data",
+                "createdAt": "2016-04-25T12:42:08+02:00",
+                "updatedAt": null,
+                "left": 116,
+                "level": 3,
+                "right": 187,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1536,
+                    "parentId": 1535,
+                    "name": "CodeDeploy",
+                    "createdAt": "2016-04-25T12:42:09+02:00",
+                    "updatedAt": null,
+                    "left": 117,
+                    "level": 4,
+                    "right": 120,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1538,
+                        "parentId": 1536,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T12:42:11+02:00",
+                        "updatedAt": null,
+                        "left": 118,
+                        "level": 5,
+                        "right": 119,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1537,
+                    "parentId": 1535,
+                    "name": "Api",
+                    "createdAt": "2016-04-25T12:42:10+02:00",
+                    "updatedAt": null,
+                    "left": 121,
+                    "level": 4,
+                    "right": 130,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1540,
+                        "parentId": 1537,
+                        "name": "ErrorParser",
+                        "createdAt": "2016-04-25T12:42:12+02:00",
+                        "updatedAt": null,
+                        "left": 122,
+                        "level": 5,
+                        "right": 123,
+                        "root": 1,
+                        "__children": []
+                      },
+                      {
+                        "id": 1543,
+                        "parentId": 1537,
+                        "name": "Parser",
+                        "createdAt": "2016-04-25T12:42:14+02:00",
+                        "updatedAt": null,
+                        "left": 124,
+                        "level": 5,
+                        "right": 127,
+                        "root": 1,
+                        "__children": [
+                          {
+                            "id": 1547,
+                            "parentId": 1543,
+                            "name": "Exception",
+                            "createdAt": "2016-04-25T12:42:17+02:00",
+                            "updatedAt": null,
+                            "left": 125,
+                            "level": 6,
+                            "right": 126,
+                            "root": 1,
+                            "__children": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": 1545,
+                        "parentId": 1537,
+                        "name": "Serializer",
+                        "createdAt": "2016-04-25T12:42:17+02:00",
+                        "updatedAt": null,
+                        "left": 128,
+                        "level": 5,
+                        "right": 129,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1539,
+                    "parentId": 1535,
+                    "name": "CloudSearch",
+                    "createdAt": "2016-04-25T12:42:12+02:00",
+                    "updatedAt": null,
+                    "left": 131,
+                    "level": 4,
+                    "right": 134,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1541,
+                        "parentId": 1539,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T12:42:14+02:00",
+                        "updatedAt": null,
+                        "left": 132,
+                        "level": 5,
+                        "right": 133,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1542,
+                    "parentId": 1535,
+                    "name": "CloudTrail",
+                    "createdAt": "2016-04-25T12:42:14+02:00",
+                    "updatedAt": null,
+                    "left": 135,
+                    "level": 4,
+                    "right": 138,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1546,
+                        "parentId": 1542,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T12:42:17+02:00",
+                        "updatedAt": null,
+                        "left": 136,
+                        "level": 5,
+                        "right": 137,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1544,
+                    "parentId": 1535,
+                    "name": "CloudFront",
+                    "createdAt": "2016-04-25T12:42:16+02:00",
+                    "updatedAt": null,
+                    "left": 139,
+                    "level": 4,
+                    "right": 142,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1549,
+                        "parentId": 1544,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T12:42:19+02:00",
+                        "updatedAt": null,
+                        "left": 140,
+                        "level": 5,
+                        "right": 141,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1548,
+                    "parentId": 1535,
+                    "name": "CloudFormation",
+                    "createdAt": "2016-04-25T12:42:19+02:00",
+                    "updatedAt": null,
+                    "left": 143,
+                    "level": 4,
+                    "right": 146,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1551,
+                        "parentId": 1548,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T12:42:21+02:00",
+                        "updatedAt": null,
+                        "left": 144,
+                        "level": 5,
+                        "right": 145,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1550,
+                    "parentId": 1535,
+                    "name": "CloudHsm",
+                    "createdAt": "2016-04-25T12:42:21+02:00",
+                    "updatedAt": null,
+                    "left": 147,
+                    "level": 4,
+                    "right": 150,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1552,
+                        "parentId": 1550,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T12:42:23+02:00",
+                        "updatedAt": null,
+                        "left": 148,
+                        "level": 5,
+                        "right": 149,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1553,
+                    "parentId": 1535,
+                    "name": "CloudWatchLogs",
+                    "createdAt": "2016-04-25T12:42:24+02:00",
+                    "updatedAt": null,
+                    "left": 151,
+                    "level": 4,
+                    "right": 154,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1554,
+                        "parentId": 1553,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T12:42:26+02:00",
+                        "updatedAt": null,
+                        "left": 152,
+                        "level": 5,
+                        "right": 153,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1555,
+                    "parentId": 1535,
+                    "name": "ConfigService",
+                    "createdAt": "2016-04-25T12:42:26+02:00",
+                    "updatedAt": null,
+                    "left": 155,
+                    "level": 4,
+                    "right": 158,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1557,
+                        "parentId": 1555,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T12:42:28+02:00",
+                        "updatedAt": null,
+                        "left": 156,
+                        "level": 5,
+                        "right": 157,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1556,
+                    "parentId": 1535,
+                    "name": "CodeCommit",
+                    "createdAt": "2016-04-25T12:42:27+02:00",
+                    "updatedAt": null,
+                    "left": 159,
+                    "level": 4,
+                    "right": 162,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1558,
+                        "parentId": 1556,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T12:42:29+02:00",
+                        "updatedAt": null,
+                        "left": 160,
+                        "level": 5,
+                        "right": 161,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1559,
+                    "parentId": 1535,
+                    "name": "CloudSearchDomain",
+                    "createdAt": "2016-04-25T12:42:29+02:00",
+                    "updatedAt": null,
+                    "left": 163,
+                    "level": 4,
+                    "right": 166,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1560,
+                        "parentId": 1559,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T12:42:31+02:00",
+                        "updatedAt": null,
+                        "left": 164,
+                        "level": 5,
+                        "right": 165,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1561,
+                    "parentId": 1535,
+                    "name": "AutoScaling",
+                    "createdAt": "2016-04-25T12:42:32+02:00",
+                    "updatedAt": null,
+                    "left": 167,
+                    "level": 4,
+                    "right": 170,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1563,
+                        "parentId": 1561,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T12:42:34+02:00",
+                        "updatedAt": null,
+                        "left": 168,
+                        "level": 5,
+                        "right": 169,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1562,
+                    "parentId": 1535,
+                    "name": "CodePipeline",
+                    "createdAt": "2016-04-25T12:42:34+02:00",
+                    "updatedAt": null,
+                    "left": 171,
+                    "level": 4,
+                    "right": 174,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1565,
+                        "parentId": 1562,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T12:42:36+02:00",
+                        "updatedAt": null,
+                        "left": 172,
+                        "level": 5,
+                        "right": 173,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1564,
+                    "parentId": 1535,
+                    "name": "CognitoSync",
+                    "createdAt": "2016-04-25T12:42:35+02:00",
+                    "updatedAt": null,
+                    "left": 175,
+                    "level": 4,
+                    "right": 178,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1567,
+                        "parentId": 1564,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T12:42:38+02:00",
+                        "updatedAt": null,
+                        "left": 176,
+                        "level": 5,
+                        "right": 177,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1566,
+                    "parentId": 1535,
+                    "name": "CognitoIdentity",
+                    "createdAt": "2016-04-25T12:42:37+02:00",
+                    "updatedAt": null,
+                    "left": 179,
+                    "level": 4,
+                    "right": 182,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1568,
+                        "parentId": 1566,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T12:42:39+02:00",
+                        "updatedAt": null,
+                        "left": 180,
+                        "level": 5,
+                        "right": 181,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1569,
+                    "parentId": 1535,
+                    "name": "CloudWatch",
+                    "createdAt": "2016-04-25T12:42:39+02:00",
+                    "updatedAt": null,
+                    "left": 183,
+                    "level": 4,
+                    "right": 186,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1570,
+                        "parentId": 1569,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T12:42:41+02:00",
+                        "updatedAt": null,
+                        "left": 184,
+                        "level": 5,
+                        "right": 185,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 1470,
+            "parentId": 188,
+            "name": "dummy-data",
+            "createdAt": "2016-04-25T12:22:48+02:00",
+            "updatedAt": null,
+            "left": 189,
+            "level": 2,
+            "right": 260,
+            "root": 1,
+            "__children": [
+              {
+                "id": 1471,
+                "parentId": 1470,
+                "name": "CloudSearch",
+                "createdAt": "2016-04-25T12:22:50+02:00",
+                "updatedAt": null,
+                "left": 190,
+                "level": 3,
+                "right": 193,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1487,
+                    "parentId": 1471,
+                    "name": "Exception",
+                    "createdAt": "2016-04-25T12:22:57+02:00",
+                    "updatedAt": null,
+                    "left": 191,
+                    "level": 4,
+                    "right": 192,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              },
+              {
+                "id": 1472,
+                "parentId": 1470,
+                "name": "Api",
+                "createdAt": "2016-04-25T12:22:50+02:00",
+                "updatedAt": null,
+                "left": 194,
+                "level": 3,
+                "right": 203,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1488,
+                    "parentId": 1472,
+                    "name": "ErrorParser",
+                    "createdAt": "2016-04-25T12:22:58+02:00",
+                    "updatedAt": null,
+                    "left": 195,
+                    "level": 4,
+                    "right": 196,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1489,
+                    "parentId": 1472,
+                    "name": "Serializer",
+                    "createdAt": "2016-04-25T12:22:59+02:00",
+                    "updatedAt": null,
+                    "left": 197,
+                    "level": 4,
+                    "right": 198,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1490,
+                    "parentId": 1472,
+                    "name": "Parser",
+                    "createdAt": "2016-04-25T12:22:59+02:00",
+                    "updatedAt": null,
+                    "left": 199,
+                    "level": 4,
+                    "right": 202,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1505,
+                        "parentId": 1490,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T12:23:08+02:00",
+                        "updatedAt": null,
+                        "left": 200,
+                        "level": 5,
+                        "right": 201,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 1473,
+                "parentId": 1470,
+                "name": "CodeDeploy",
+                "createdAt": "2016-04-25T12:22:50+02:00",
+                "updatedAt": null,
+                "left": 204,
+                "level": 3,
+                "right": 207,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1491,
+                    "parentId": 1473,
+                    "name": "Exception",
+                    "createdAt": "2016-04-25T12:22:59+02:00",
+                    "updatedAt": null,
+                    "left": 205,
+                    "level": 4,
+                    "right": 206,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              },
+              {
+                "id": 1474,
+                "parentId": 1470,
+                "name": "CloudFormation",
+                "createdAt": "2016-04-25T12:22:50+02:00",
+                "updatedAt": null,
+                "left": 208,
+                "level": 3,
+                "right": 211,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1492,
+                    "parentId": 1474,
+                    "name": "Exception",
+                    "createdAt": "2016-04-25T12:22:59+02:00",
+                    "updatedAt": null,
+                    "left": 209,
+                    "level": 4,
+                    "right": 210,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              },
+              {
+                "id": 1475,
+                "parentId": 1470,
+                "name": "CloudTrail",
+                "createdAt": "2016-04-25T12:22:50+02:00",
+                "updatedAt": null,
+                "left": 212,
+                "level": 3,
+                "right": 215,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1493,
+                    "parentId": 1475,
+                    "name": "Exception",
+                    "createdAt": "2016-04-25T12:23:00+02:00",
+                    "updatedAt": null,
+                    "left": 213,
+                    "level": 4,
+                    "right": 214,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              },
+              {
+                "id": 1476,
+                "parentId": 1470,
+                "name": "CloudFront",
+                "createdAt": "2016-04-25T12:22:51+02:00",
+                "updatedAt": null,
+                "left": 216,
+                "level": 3,
+                "right": 219,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1494,
+                    "parentId": 1476,
+                    "name": "Exception",
+                    "createdAt": "2016-04-25T12:23:01+02:00",
+                    "updatedAt": null,
+                    "left": 217,
+                    "level": 4,
+                    "right": 218,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              },
+              {
+                "id": 1477,
+                "parentId": 1470,
+                "name": "CloudHsm",
+                "createdAt": "2016-04-25T12:22:52+02:00",
+                "updatedAt": null,
+                "left": 220,
+                "level": 3,
+                "right": 223,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1495,
+                    "parentId": 1477,
+                    "name": "Exception",
+                    "createdAt": "2016-04-25T12:23:01+02:00",
+                    "updatedAt": null,
+                    "left": 221,
+                    "level": 4,
+                    "right": 222,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              },
+              {
+                "id": 1478,
+                "parentId": 1470,
+                "name": "CloudWatchLogs",
+                "createdAt": "2016-04-25T12:22:53+02:00",
+                "updatedAt": null,
+                "left": 224,
+                "level": 3,
+                "right": 227,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1497,
+                    "parentId": 1478,
+                    "name": "Exception",
+                    "createdAt": "2016-04-25T12:23:02+02:00",
+                    "updatedAt": null,
+                    "left": 225,
+                    "level": 4,
+                    "right": 226,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              },
+              {
+                "id": 1479,
+                "parentId": 1470,
+                "name": "ConfigService",
+                "createdAt": "2016-04-25T12:22:53+02:00",
+                "updatedAt": null,
+                "left": 228,
+                "level": 3,
+                "right": 231,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1496,
+                    "parentId": 1479,
+                    "name": "Exception",
+                    "createdAt": "2016-04-25T12:23:02+02:00",
+                    "updatedAt": null,
+                    "left": 229,
+                    "level": 4,
+                    "right": 230,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              },
+              {
+                "id": 1480,
+                "parentId": 1470,
+                "name": "CodeCommit",
+                "createdAt": "2016-04-25T12:22:53+02:00",
+                "updatedAt": null,
+                "left": 232,
+                "level": 3,
+                "right": 235,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1499,
+                    "parentId": 1480,
+                    "name": "Exception",
+                    "createdAt": "2016-04-25T12:23:02+02:00",
+                    "updatedAt": null,
+                    "left": 233,
+                    "level": 4,
+                    "right": 234,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              },
+              {
+                "id": 1481,
+                "parentId": 1470,
+                "name": "AutoScaling",
+                "createdAt": "2016-04-25T12:22:53+02:00",
+                "updatedAt": null,
+                "left": 236,
+                "level": 3,
+                "right": 239,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1498,
+                    "parentId": 1481,
+                    "name": "Exception",
+                    "createdAt": "2016-04-25T12:23:02+02:00",
+                    "updatedAt": null,
+                    "left": 237,
+                    "level": 4,
+                    "right": 238,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              },
+              {
+                "id": 1482,
+                "parentId": 1470,
+                "name": "CloudSearchDomain",
+                "createdAt": "2016-04-25T12:22:53+02:00",
+                "updatedAt": null,
+                "left": 240,
+                "level": 3,
+                "right": 243,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1500,
+                    "parentId": 1482,
+                    "name": "Exception",
+                    "createdAt": "2016-04-25T12:23:03+02:00",
+                    "updatedAt": null,
+                    "left": 241,
+                    "level": 4,
+                    "right": 242,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              },
+              {
+                "id": 1483,
+                "parentId": 1470,
+                "name": "CognitoSync",
+                "createdAt": "2016-04-25T12:22:56+02:00",
+                "updatedAt": null,
+                "left": 244,
+                "level": 3,
+                "right": 247,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1501,
+                    "parentId": 1483,
+                    "name": "Exception",
+                    "createdAt": "2016-04-25T12:23:04+02:00",
+                    "updatedAt": null,
+                    "left": 245,
+                    "level": 4,
+                    "right": 246,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              },
+              {
+                "id": 1484,
+                "parentId": 1470,
+                "name": "CodePipeline",
+                "createdAt": "2016-04-25T12:22:56+02:00",
+                "updatedAt": null,
+                "left": 248,
+                "level": 3,
+                "right": 251,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1502,
+                    "parentId": 1484,
+                    "name": "Exception",
+                    "createdAt": "2016-04-25T12:23:04+02:00",
+                    "updatedAt": null,
+                    "left": 249,
+                    "level": 4,
+                    "right": 250,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              },
+              {
+                "id": 1485,
+                "parentId": 1470,
+                "name": "CognitoIdentity",
+                "createdAt": "2016-04-25T12:22:56+02:00",
+                "updatedAt": null,
+                "left": 252,
+                "level": 3,
+                "right": 255,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1503,
+                    "parentId": 1485,
+                    "name": "Exception",
+                    "createdAt": "2016-04-25T12:23:04+02:00",
+                    "updatedAt": null,
+                    "left": 253,
+                    "level": 4,
+                    "right": 254,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              },
+              {
+                "id": 1486,
+                "parentId": 1470,
+                "name": "CloudWatch",
+                "createdAt": "2016-04-25T12:22:56+02:00",
+                "updatedAt": null,
+                "left": 256,
+                "level": 3,
+                "right": 259,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1504,
+                    "parentId": 1486,
+                    "name": "Exception",
+                    "createdAt": "2016-04-25T12:23:05+02:00",
+                    "updatedAt": null,
+                    "left": 257,
+                    "level": 4,
+                    "right": 258,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 1506,
+            "parentId": 188,
+            "name": "AutoScaling",
+            "createdAt": "2016-04-25T12:27:02+02:00",
+            "updatedAt": null,
+            "left": 261,
+            "level": 2,
+            "right": 264,
+            "root": 1,
+            "__children": [
+              {
+                "id": 1508,
+                "parentId": 1506,
+                "name": "Exception",
+                "createdAt": "2016-04-25T12:27:04+02:00",
+                "updatedAt": null,
+                "left": 262,
+                "level": 3,
+                "right": 263,
+                "root": 1,
+                "__children": []
+              }
+            ]
+          },
+          {
+            "id": 1507,
+            "parentId": 188,
+            "name": "Api",
+            "createdAt": "2016-04-25T12:27:02+02:00",
+            "updatedAt": null,
+            "left": 265,
+            "level": 2,
+            "right": 294,
+            "root": 1,
+            "__children": [
+              {
+                "id": 1509,
+                "parentId": 1507,
+                "name": "Parser",
+                "createdAt": "2016-04-25T12:27:04+02:00",
+                "updatedAt": null,
+                "left": 266,
+                "level": 3,
+                "right": 269,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1512,
+                    "parentId": 1509,
+                    "name": "Exception",
+                    "createdAt": "2016-04-25T12:27:06+02:00",
+                    "updatedAt": null,
+                    "left": 267,
+                    "level": 4,
+                    "right": 268,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              },
+              {
+                "id": 1510,
+                "parentId": 1507,
+                "name": "Serializer",
+                "createdAt": "2016-04-25T12:27:05+02:00",
+                "updatedAt": null,
+                "left": 270,
+                "level": 3,
+                "right": 271,
+                "root": 1,
+                "__children": []
+              },
+              {
+                "id": 1511,
+                "parentId": 1507,
+                "name": "ErrorParser",
+                "createdAt": "2016-04-25T12:27:05+02:00",
+                "updatedAt": null,
+                "left": 272,
+                "level": 3,
+                "right": 273,
+                "root": 1,
+                "__children": []
+              },
+              {
+                "id": 1809,
+                "parentId": 1507,
+                "name": "A",
+                "createdAt": "2016-04-25T14:08:03+02:00",
+                "updatedAt": null,
+                "left": 274,
+                "level": 3,
+                "right": 281,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1810,
+                    "parentId": 1809,
+                    "name": "A2",
+                    "createdAt": "2016-04-25T14:08:04+02:00",
+                    "updatedAt": null,
+                    "left": 275,
+                    "level": 4,
+                    "right": 276,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1811,
+                    "parentId": 1809,
+                    "name": "A1",
+                    "createdAt": "2016-04-25T14:08:06+02:00",
+                    "updatedAt": null,
+                    "left": 277,
+                    "level": 4,
+                    "right": 278,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1812,
+                    "parentId": 1809,
+                    "name": "A3",
+                    "createdAt": "2016-04-25T14:08:07+02:00",
+                    "updatedAt": null,
+                    "left": 279,
+                    "level": 4,
+                    "right": 280,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              },
+              {
+                "id": 1813,
+                "parentId": 1507,
+                "name": "dummy-data",
+                "createdAt": "2016-04-25T14:17:36+02:00",
+                "updatedAt": null,
+                "left": 282,
+                "level": 3,
+                "right": 293,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1814,
+                    "parentId": 1813,
+                    "name": "CloudWatch",
+                    "createdAt": "2016-04-25T14:17:38+02:00",
+                    "updatedAt": null,
+                    "left": 283,
+                    "level": 4,
+                    "right": 286,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1815,
+                        "parentId": 1814,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T14:17:39+02:00",
+                        "updatedAt": null,
+                        "left": 284,
+                        "level": 5,
+                        "right": 285,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1816,
+                    "parentId": 1813,
+                    "name": "CognitoIdentity",
+                    "createdAt": "2016-04-25T14:17:40+02:00",
+                    "updatedAt": null,
+                    "left": 287,
+                    "level": 4,
+                    "right": 290,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1817,
+                        "parentId": 1816,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T14:17:42+02:00",
+                        "updatedAt": null,
+                        "left": 288,
+                        "level": 5,
+                        "right": 289,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1818,
+                    "parentId": 1813,
+                    "name": "CognitoSync",
+                    "createdAt": "2016-04-25T14:17:44+02:00",
+                    "updatedAt": null,
+                    "left": 291,
+                    "level": 4,
+                    "right": 292,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 1803,
+            "parentId": 188,
+            "name": "CodeCommit",
+            "createdAt": "2016-04-25T13:41:58+02:00",
+            "updatedAt": null,
+            "left": 295,
+            "level": 2,
+            "right": 298,
+            "root": 1,
+            "__children": [
+              {
+                "id": 1804,
+                "parentId": 1803,
+                "name": "Exception",
+                "createdAt": "2016-04-25T13:42:01+02:00",
+                "updatedAt": null,
+                "left": 296,
+                "level": 3,
+                "right": 297,
+                "root": 1,
+                "__children": []
+              }
+            ]
+          },
+          {
+            "id": 1805,
+            "parentId": 188,
+            "name": "A",
+            "createdAt": "2016-04-25T14:07:35+02:00",
+            "updatedAt": null,
+            "left": 299,
+            "level": 2,
+            "right": 306,
+            "root": 1,
+            "__children": [
+              {
+                "id": 1806,
+                "parentId": 1805,
+                "name": "A2",
+                "createdAt": "2016-04-25T14:07:37+02:00",
+                "updatedAt": null,
+                "left": 300,
+                "level": 3,
+                "right": 301,
+                "root": 1,
+                "__children": []
+              },
+              {
+                "id": 1807,
+                "parentId": 1805,
+                "name": "A1",
+                "createdAt": "2016-04-25T14:07:38+02:00",
+                "updatedAt": null,
+                "left": 302,
+                "level": 3,
+                "right": 303,
+                "root": 1,
+                "__children": []
+              },
+              {
+                "id": 1808,
+                "parentId": 1805,
+                "name": "A3",
+                "createdAt": "2016-04-25T14:07:42+02:00",
+                "updatedAt": null,
+                "left": 304,
+                "level": 3,
+                "right": 305,
+                "root": 1,
+                "__children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1122,
+        "parentId": 1,
+        "name": "C",
+        "createdAt": "2016-04-22T06:55:07+02:00",
+        "updatedAt": null,
+        "left": 308,
+        "level": 1,
+        "right": 381,
+        "root": 1,
+        "__children": [
+          {
+            "id": 1605,
+            "parentId": 1122,
+            "name": "BBB",
+            "createdAt": "2016-04-25T12:45:33+02:00",
+            "updatedAt": null,
+            "left": 309,
+            "level": 2,
+            "right": 338,
+            "root": 1,
+            "__children": [
+              {
+                "id": 1609,
+                "parentId": 1605,
+                "name": "BBB",
+                "createdAt": "2016-04-25T12:53:01+02:00",
+                "updatedAt": null,
+                "left": 310,
+                "level": 3,
+                "right": 311,
+                "root": 1,
+                "__children": []
+              },
+              {
+                "id": 1610,
+                "parentId": 1605,
+                "name": "BBB (copy)",
+                "createdAt": "2016-04-25T12:53:02+02:00",
+                "updatedAt": null,
+                "left": 312,
+                "level": 3,
+                "right": 313,
+                "root": 1,
+                "__children": []
+              },
+              {
+                "id": 1611,
+                "parentId": 1605,
+                "name": "CCC",
+                "createdAt": "2016-04-25T12:53:03+02:00",
+                "updatedAt": null,
+                "left": 314,
+                "level": 3,
+                "right": 315,
+                "root": 1,
+                "__children": []
+              },
+              {
+                "id": 1612,
+                "parentId": 1605,
+                "name": "CCC (copy)",
+                "createdAt": "2016-04-25T12:53:04+02:00",
+                "updatedAt": null,
+                "left": 316,
+                "level": 3,
+                "right": 317,
+                "root": 1,
+                "__children": []
+              },
+              {
+                "id": 1613,
+                "parentId": 1605,
+                "name": "aAA",
+                "createdAt": "2016-04-25T12:53:52+02:00",
+                "updatedAt": null,
+                "left": 318,
+                "level": 3,
+                "right": 337,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1614,
+                    "parentId": 1613,
+                    "name": "BBB",
+                    "createdAt": "2016-04-25T12:54:06+02:00",
+                    "updatedAt": null,
+                    "left": 319,
+                    "level": 4,
+                    "right": 330,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1615,
+                        "parentId": 1614,
+                        "name": "CCC",
+                        "createdAt": "2016-04-25T12:54:07+02:00",
+                        "updatedAt": null,
+                        "left": 320,
+                        "level": 5,
+                        "right": 325,
+                        "root": 1,
+                        "__children": [
+                          {
+                            "id": 1617,
+                            "parentId": 1615,
+                            "name": "BBB (copy)",
+                            "createdAt": "2016-04-25T12:54:09+02:00",
+                            "updatedAt": null,
+                            "left": 321,
+                            "level": 6,
+                            "right": 322,
+                            "root": 1,
+                            "__children": []
+                          },
+                          {
+                            "id": 1620,
+                            "parentId": 1615,
+                            "name": "CCC (copy)",
+                            "createdAt": "2016-04-25T12:54:10+02:00",
+                            "updatedAt": null,
+                            "left": 323,
+                            "level": 6,
+                            "right": 324,
+                            "root": 1,
+                            "__children": []
+                          }
+                        ]
+                      },
+                      {
+                        "id": 1619,
+                        "parentId": 1614,
+                        "name": "BBB (copy)",
+                        "createdAt": "2016-04-25T12:54:09+02:00",
+                        "updatedAt": null,
+                        "left": 326,
+                        "level": 5,
+                        "right": 327,
+                        "root": 1,
+                        "__children": []
+                      },
+                      {
+                        "id": 1622,
+                        "parentId": 1614,
+                        "name": "CCC (copy)",
+                        "createdAt": "2016-04-25T12:54:11+02:00",
+                        "updatedAt": null,
+                        "left": 328,
+                        "level": 5,
+                        "right": 329,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1616,
+                    "parentId": 1613,
+                    "name": "BBB (copy)",
+                    "createdAt": "2016-04-25T12:54:07+02:00",
+                    "updatedAt": null,
+                    "left": 331,
+                    "level": 4,
+                    "right": 332,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1618,
+                    "parentId": 1613,
+                    "name": "CCC",
+                    "createdAt": "2016-04-25T12:54:09+02:00",
+                    "updatedAt": null,
+                    "left": 333,
+                    "level": 4,
+                    "right": 334,
+                    "root": 1,
+                    "__children": []
+                  },
+                  {
+                    "id": 1621,
+                    "parentId": 1613,
+                    "name": "CCC (copy)",
+                    "createdAt": "2016-04-25T12:54:11+02:00",
+                    "updatedAt": null,
+                    "left": 335,
+                    "level": 4,
+                    "right": 336,
+                    "root": 1,
+                    "__children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 1606,
+            "parentId": 1122,
+            "name": "BBB (copy)",
+            "createdAt": "2016-04-25T12:45:34+02:00",
+            "updatedAt": null,
+            "left": 339,
+            "level": 2,
+            "right": 340,
+            "root": 1,
+            "__children": []
+          },
+          {
+            "id": 1607,
+            "parentId": 1122,
+            "name": "CCC",
+            "createdAt": "2016-04-25T12:45:35+02:00",
+            "updatedAt": null,
+            "left": 341,
+            "level": 2,
+            "right": 342,
+            "root": 1,
+            "__children": []
+          },
+          {
+            "id": 1608,
+            "parentId": 1122,
+            "name": "CCC (copy)",
+            "createdAt": "2016-04-25T12:45:37+02:00",
+            "updatedAt": null,
+            "left": 343,
+            "level": 2,
+            "right": 344,
+            "root": 1,
+            "__children": []
+          },
+          {
+            "id": 1785,
+            "parentId": 1122,
+            "name": "dummy-data",
+            "createdAt": "2016-04-25T13:37:17+02:00",
+            "updatedAt": null,
+            "left": 345,
+            "level": 2,
+            "right": 380,
+            "root": 1,
+            "__children": [
+              {
+                "id": 1786,
+                "parentId": 1785,
+                "name": "dummy-data",
+                "createdAt": "2016-04-25T13:37:18+02:00",
+                "updatedAt": null,
+                "left": 346,
+                "level": 3,
+                "right": 379,
+                "root": 1,
+                "__children": [
+                  {
+                    "id": 1787,
+                    "parentId": 1786,
+                    "name": "CodeDeploy",
+                    "createdAt": "2016-04-25T13:37:19+02:00",
+                    "updatedAt": null,
+                    "left": 347,
+                    "level": 4,
+                    "right": 350,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1788,
+                        "parentId": 1787,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T13:37:21+02:00",
+                        "updatedAt": null,
+                        "left": 348,
+                        "level": 5,
+                        "right": 349,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1789,
+                    "parentId": 1786,
+                    "name": "Api",
+                    "createdAt": "2016-04-25T13:37:22+02:00",
+                    "updatedAt": null,
+                    "left": 351,
+                    "level": 4,
+                    "right": 354,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1790,
+                        "parentId": 1789,
+                        "name": "ErrorParser",
+                        "createdAt": "2016-04-25T13:37:24+02:00",
+                        "updatedAt": null,
+                        "left": 352,
+                        "level": 5,
+                        "right": 353,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1791,
+                    "parentId": 1786,
+                    "name": "CloudFormation",
+                    "createdAt": "2016-04-25T13:41:05+02:00",
+                    "updatedAt": null,
+                    "left": 355,
+                    "level": 4,
+                    "right": 358,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1792,
+                        "parentId": 1791,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T13:41:07+02:00",
+                        "updatedAt": null,
+                        "left": 356,
+                        "level": 5,
+                        "right": 357,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1793,
+                    "parentId": 1786,
+                    "name": "CloudFront",
+                    "createdAt": "2016-04-25T13:41:08+02:00",
+                    "updatedAt": null,
+                    "left": 359,
+                    "level": 4,
+                    "right": 362,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1794,
+                        "parentId": 1793,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T13:41:09+02:00",
+                        "updatedAt": null,
+                        "left": 360,
+                        "level": 5,
+                        "right": 361,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1795,
+                    "parentId": 1786,
+                    "name": "CloudHsm",
+                    "createdAt": "2016-04-25T13:41:11+02:00",
+                    "updatedAt": null,
+                    "left": 363,
+                    "level": 4,
+                    "right": 366,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1796,
+                        "parentId": 1795,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T13:41:12+02:00",
+                        "updatedAt": null,
+                        "left": 364,
+                        "level": 5,
+                        "right": 365,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1797,
+                    "parentId": 1786,
+                    "name": "CloudSearch",
+                    "createdAt": "2016-04-25T13:41:14+02:00",
+                    "updatedAt": null,
+                    "left": 367,
+                    "level": 4,
+                    "right": 370,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1798,
+                        "parentId": 1797,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T13:41:16+02:00",
+                        "updatedAt": null,
+                        "left": 368,
+                        "level": 5,
+                        "right": 369,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1799,
+                    "parentId": 1786,
+                    "name": "CloudSearchDomain",
+                    "createdAt": "2016-04-25T13:41:18+02:00",
+                    "updatedAt": null,
+                    "left": 371,
+                    "level": 4,
+                    "right": 374,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1800,
+                        "parentId": 1799,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T13:41:20+02:00",
+                        "updatedAt": null,
+                        "left": 372,
+                        "level": 5,
+                        "right": 373,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": 1801,
+                    "parentId": 1786,
+                    "name": "CloudTrail",
+                    "createdAt": "2016-04-25T13:41:23+02:00",
+                    "updatedAt": null,
+                    "left": 375,
+                    "level": 4,
+                    "right": 378,
+                    "root": 1,
+                    "__children": [
+                      {
+                        "id": 1802,
+                        "parentId": 1801,
+                        "name": "Exception",
+                        "createdAt": "2016-04-25T13:41:25+02:00",
+                        "updatedAt": null,
+                        "left": 376,
+                        "level": 5,
+                        "right": 377,
+                        "root": 1,
+                        "__children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

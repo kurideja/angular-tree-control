@@ -1,109 +1,168 @@
-treecontrol {
+[tree-control] {
     /* prevent user selection */
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
     -webkit-user-select: none;
+    -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
     /* default */
     font-family: Verdana, Helvetica, Arial, sans-serif;
-    font-size:13px;
+    font-size: 13px;
     color: #555;
     text-decoration: none;
 }
-
-treecontrol ul {
+[tree-control] ul {
     margin: 0;
     padding: 0;
     list-style: none;
     border: none;
     overflow: hidden;
 }
-
-treecontrol li {
+[tree-control] li {
     position: relative;
-    padding: 0 0 0 20px;
-    line-height: 20px;
+    padding: 0;
+    line-height: 24px;
+    white-space: nowrap;
 }
-
-treecontrol li.tree-expanded i.tree-leaf-head, treecontrol li.tree-collapsed i.tree-leaf-head {display:none;}
-treecontrol li.tree-expanded i.tree-branch-head, treecontrol li.tree-collapsed i.tree-branch-head {display:inline;}
-treecontrol li.tree-leaf i.tree-branch-head {display:none;}
-treecontrol li.tree-leaf i.tree-leaf-head {display:inline;}
-
-treecontrol li i.tree-branch-head {
-    cursor: pointer;
+[tree-control] .tree-branch-caret {
+    margin-top: 3px;
 }
-
-treecontrol li .tree-label {
-    cursor: pointer;
+[tree-control] .tree-indentation-block,
+[tree-control] .caret-container {
+    display: inline-block;
+    height: 100%;
+    cursor: default;
+}
+[tree-control] .caret-container {
+    position: relative;
+    margin-right: 4px;
+    width: 10px;
+}
+[tree-control] li.tree-expanded i.tree-leaf-head,
+[tree-control] li.tree-collapsed i.tree-leaf-head,
+[tree-control] li.tree-leaf i.tree-branch-head {
+    display: none;
+}
+[tree-control] li.tree-expanded i.tree-branch-head,
+[tree-control] li.tree-collapsed i.tree-branch-head,
+[tree-control] li.tree-leaf i.tree-leaf-head {
     display: inline;
 }
-
-
-treecontrol.tree-classic li.tree-expanded i.tree-branch-head {
-    padding: 1px 10px;
-    background: url("../images/folder.png") no-repeat;
+[tree-control] li i {
+    cursor: pointer;
+    position: relative;
+}
+[tree-control] li .tree-label {
+    cursor: pointer;
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    margin-left: 8px;
+}
+[tree-control].tree-classic i.tree-branch-caret {
+    display: block;
+    position: relative;
+    height: 10px;
+    width: 10px;
+    cursor: default;
+}
+[tree-control].tree-classic li.tree-expanded i.tree-branch-head {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 111px 24px;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
 }
 
-treecontrol.tree-classic li.tree-collapsed i.tree-branch-head {
-    padding: 1px 10px;
-    background: url("../images/folder-closed.png") no-repeat;
+[tree-control].tree-classic li.tree-expanded > .tree-item > .caret-container > i.tree-branch-caret {
+    right: 2.5px;
+    border-top: 5px solid #282828;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+[tree-control].tree-classic li.tree-collapsed i.tree-branch-caret {
+    border-top: 5px solid transparent;
+    border-left: 5px solid #282828;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+[tree-control].tree-classic li.tree-collapsed i.tree-branch-head {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 111px 24px;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
 }
 
-treecontrol.tree-classic li.tree-leaf i.tree-leaf-head {
-    padding: 1px 10px;
-    background: url("../images/file.png") no-repeat;
+[tree-control].tree-classic li.tree-leaf i.tree-branch-head {
+    display: none;
+}
+[tree-control].tree-classic li.tree-leaf i.tree-leaf-head {
+    background-repeat: no-repeat;
+    backgroud-position: 0 0;
+    background-size: 111px 24px;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
 }
 
-treecontrol.tree-classic li .tree-selected {
-    background-color: #aaddff;
-    font-weight: bold;
+[tree-control].tree-classic li.tree-leaf i.tree-branch-caret {
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+[tree-control].tree-classic li.tree-leaf .tree-selected i.tree-leaf-head {
+    background-position: -87px;
+}
+[tree-control].tree-classic .tree-item {
+    height: 34px;
+    padding: 7px 0;
+    cursor: pointer;
+}
+[tree-control].tree-classic .tree-item:hover {
+    background: #ccebff;
+}
+[tree-control].tree-classic .tree-item.tree-selected {
+    color: #ffffff;
+    background: #0974b3;
+}
+[tree-control].tree-classic li.tree-expanded .tree-selected.tree-item > .caret-container > i.tree-branch-caret {
+    border-top: 5px solid #ffffff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+[tree-control].tree-classic li.tree-expanded .tree-selected i.tree-branch-head {
+    background-position: -87px;
+}
+[tree-control].tree-classic li.tree-collapsed .tree-selected.tree-item > .caret-container > i.tree-branch-caret {
+    border-top: 5px solid transparent;
+    border-left: 5px solid #ffffff;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+[tree-control].tree-classic li.tree-collapsed .tree-selected i.tree-branch-head {
+    background-position: -87px;
+}
+[tree-control].tree-classic li.tree-leaf .tree-selected.tree-item > .caret-container > i.tree-branch-caret {
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
 }
 
-
-treecontrol.tree-light li.tree-expanded i.tree-branch-head {
-    padding: 1px 10px;
-    background: url("../images/node-opened-2.png") no-repeat;
+[tree-control] .tree-expanded .tree-branch-head {
+    background-image: url('../img/folder-expanded.svg');
 }
 
-treecontrol.tree-light li.tree-collapsed i.tree-branch-head {
-    padding: 1px 10px;
-    background: url("../images/node-closed-2.png") no-repeat;
+[tree-control] .tree-collapsed .tree-branch-head {
+    background: url('../img/folder-collapsed.svg');
 }
 
-treecontrol.tree-light li.tree-leaf i.tree-leaf-head {
-    padding: 1px 10px;
-    width: 16px; height: 16px;
-    background: none no-repeat;
+[tree-control] .tree-leaf-head{
+    background: url('../img/folder-collapsed.svg');
 }
 
-treecontrol.tree-light li .tree-selected {
-    font-weight: bold;
-}
-
-
-treecontrol.tree-dark li.tree-expanded i.tree-branch-head {
-    padding: 1px 10px;
-    background: url("../images/node-opened-light.png") no-repeat;
-}
-
-treecontrol.tree-dark li.tree-collapsed i.tree-branch-head {
-    padding: 1px 10px;
-    background: url("../images/node-closed-light.png") no-repeat;
-}
-
-treecontrol.tree-dark li.tree-leaf i.tree-leaf-head {
-    padding: 1px 10px;
-    width: 16px; height: 16px;
-    background: none no-repeat;
-}
-
-treecontrol.tree-dark li .tree-selected {
-    font-weight: bold;
-}
-
-treecontrol.tree-dark {
-    color: #ddd;
-}

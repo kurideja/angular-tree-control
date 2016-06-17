@@ -1,6 +1,6 @@
 {
   "name": "angular-tree-control",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": [
     "./angular-tree-control.js",
     "./css/tree-control.css"
@@ -12,7 +12,8 @@
     "karma.conf.js"
   ],
   "dependencies": {
-    "angular": "~1.2.7"
+    "angular": "~1.2.7",
+    "lodash": "~3.0"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.7",
