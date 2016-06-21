@@ -17,6 +17,7 @@
     $scope.selectedClass = selectedClass;
     $scope.doNothing = doNothing;
     $scope.customIconClass = customIconClass;
+    $scope.orderBy = $scope.orderBy || '';
 
     init();
 

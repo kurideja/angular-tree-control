@@ -18,7 +18,7 @@
 
 })();
 
-angular.module('treeControl.templates').run(['$templateCache', function($templateCache) {$templateCache.put('src/treeControlTemplate.html','<ul>\n    <li ng-repeat="node in node[options.nodeChildren] | filter:filterExpression:filterComparator"\n        ng-class="headClass(node)">\n        <div class="tree-item" ng-class="selectedClass()" ng-click="selectNodeLabel(node)">\n            <span class="tree-indentation-block"\n                  ng-style="{ width: ((node.level || 0) + 1) * options.indentation + \'px\' }"\n                  ng-dblclick="selectNodeHead($event)" ng-click="doNothing($event)"></span>\n            <span class="caret-container" ng-click="selectNodeHead($event)">\n                <i class="tree-branch-caret"></i>\n            </span>\n            <i class="tree-branch-head" ng-class="[iBranchClass(), customIconClass()]"></i>\n            <i class="tree-leaf-head"></i>\n            <div class="tree-label" tree-transclude></div>\n        </div>\n        <div tree-item ng-if="nodeExpanded()"></div>\n    </li>\n</ul>\n');}]);
+angular.module('treeControl.templates').run(['$templateCache', function($templateCache) {$templateCache.put('src/treeControlTemplate.html','<ul>\n    <li ng-repeat="node in node[options.nodeChildren] | filter:filterExpression:filterComparator | orderBy:orderBy"\n        ng-class="headClass(node)">\n        <div class="tree-item" ng-class="selectedClass()" ng-click="selectNodeLabel(node)">\n            <span class="tree-indentation-block"\n                  ng-style="{ width: ((node.level || 0) + 1) * options.indentation + \'px\' }"\n                  ng-dblclick="selectNodeHead($event)" ng-click="doNothing($event)"></span>\n            <span class="caret-container" ng-click="selectNodeHead($event)">\n                <i class="tree-branch-caret"></i>\n            </span>\n            <i class="tree-branch-head" ng-class="[iBranchClass(), customIconClass()]"></i>\n            <i class="tree-leaf-head" ng-class="customIconClass()"></i>\n            <div class="tree-label" tree-transclude></div>\n        </div>\n        <div tree-item ng-if="nodeExpanded()"></div>\n    </li>\n</ul>\n');}]);
 (function() {
 
   'use strict';
@@ -38,6 +38,7 @@ angular.module('treeControl.templates').run(['$templateCache', function($templat
     $scope.selectedClass = selectedClass;
     $scope.doNothing = doNothing;
     $scope.customIconClass = customIconClass;
+    $scope.orderBy = $scope.orderBy || '';
 
     init();
 
@@ -441,7 +442,7 @@ angular.module('treeControl.templates').run(['$templateCache', function($templat
         }
 
         // create a scope for the transclusion, whos parent is the parent of the tree control
-        scope.transcludeScope = scope.parentScopeOfTree.$new({});
+        scope.transcludeScope = scope.parentScopeOfTree.$new();
         scope.transcludeScope.node = scope.node;
         scope.transcludeScope.$parentNode = (scope.$parent.node === scope.synteticRoot) ? null : scope.$parent.node;
         scope.transcludeScope.$index = scope.$index;
@@ -453,7 +454,6 @@ angular.module('treeControl.templates').run(['$templateCache', function($templat
         scope.$on('$destroy', function () {
           scope.transcludeScope.$destroy();
         });
-
 
         scope.$treeTransclude(scope.transcludeScope, function (clone) {
           element.empty();
