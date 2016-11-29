@@ -20,6 +20,7 @@
         expandedNodes: "=?",
         onSelection: "&",
         onNodeToggle: "&",
+        onExpand: "&",
         options: "=?",
         orderBy: "@",
         reverseOrder: "@",
@@ -50,7 +51,7 @@
 
         scope.$watchCollection('expandedNodes', function (newValue) {
           var notFoundIds = 0;
-          var newExpandedNodesMap = {};
+          // var newExpandedNodesMap = {};
           var $liElements = element.find('li');
           var existingScopes = [];
           // find all nodes visible on the tree and the scope $id of the scopes including them
@@ -67,14 +68,13 @@
             for (var i = 0; (i < existingScopes.length) && !found; i++) {
               var existingScope = existingScopes[i];
               if (scope.options.equality(newExNode, existingScope.node)) {
-                newExpandedNodesMap[existingScope.$id] = existingScope.node;
+                // newExpandedNodesMap[existingScope.$id] = existingScope.node;
                 found = true;
               }
             }
-            if (!found)
-              newExpandedNodesMap[notFoundIds++] = newExNode;
+            // if (!found) newExpandedNodesMap[notFoundIds++] = newExNode;
           });
-          scope.expandedNodesMap = newExpandedNodesMap;
+          // scope.expandedNodesMap = newExpandedNodesMap; TODO
         });
 
         //Rendering template for a root node

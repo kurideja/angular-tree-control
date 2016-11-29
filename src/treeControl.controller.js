@@ -26,10 +26,6 @@
       TreeControl.ensureDefaults($scope.options);
       $scope.selectedNodes = $scope.selectedNodes || [];
       $scope.expandedNodes = $scope.expandedNodes || [];
-      $scope.expandedNodesMap = {};
-      for (var i = 0; i < $scope.expandedNodes.length; i++) {
-        $scope.expandedNodesMap['' + i] = $scope.expandedNodes[i];
-      }
       $scope.parentScopeOfTree = $scope.$parent;
     }
 
@@ -40,34 +36,48 @@
         injectSelectionClass = ' ' + liSelectionClass;
       if ($scope.options.isLeaf(node))
         return 'tree-leaf' + injectSelectionClass;
-      if ($scope.expandedNodesMap[this.$id])
+      if (nodeExpanded(this.node)) {
         return 'tree-expanded' + injectSelectionClass;
-      else
+      } else {
         return 'tree-collapsed' + injectSelectionClass;
+      }
     }
 
-    function nodeExpanded() {
-      return !!$scope.expandedNodesMap[this.$id];
+    function nodeExpanded(node) {
+      return !!_.find($scope.expandedNodes, { id: node.id });
     }
 
     function iBranchClass() {
-      if ($scope.expandedNodesMap[this.$id])
+      if (nodeExpanded(this.node))
         return TreeControl.classIfDefined($scope.options.injectClasses.iExpanded);
       else
         return TreeControl.classIfDefined($scope.options.injectClasses.iCollapsed);
     }
 
-    function selectNodeHead($event) {
-      var expanding = $scope.expandedNodesMap[this.$id] === undefined;
-      if($event) {
+    function selectNodeHead($event, node) {
+      var isExpanding = !nodeExpanded(node);
+
+      if (!isExpanding) {
+        _.remove($scope.expandedNodes, { id: node.id });
+      }
+
+      if ($event) {
         $event.stopPropagation();
       }
-      $scope.expandedNodesMap[this.$id] = (expanding ? this.node : undefined);
-      if (expanding) {
+
+      if (node && $scope.onExpand && isExpanding) {
+        $scope.onExpand({ node: node, done: afterSelection.bind(this, isExpanding)});
+      } else {
+        afterSelection.bind(this, isExpanding);
+      }
+    }
+
+    function afterSelection(isExpanding) {
+      var index;
+      if (isExpanding) {
         $scope.expandedNodes.push(this.node);
       }
       else {
-        var index;
         for (var i = 0; (i < $scope.expandedNodes.length) && !index; i++) {
           if ($scope.options.equality($scope.expandedNodes[i], this.node)) {
             index = i;
@@ -76,8 +86,10 @@
         if (index != undefined)
           $scope.expandedNodes.splice(index, 1);
       }
-      if ($scope.onNodeToggle)
-        $scope.onNodeToggle({node: this.node, expanded: expanding});
+
+      if ($scope.onNodeToggle) {
+        $scope.onNodeToggle({node: this.node, expanded: isExpanding});
+      }
     }
 
     function selectNodeLabel(selectedNode) {

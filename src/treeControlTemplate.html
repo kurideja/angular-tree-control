@@ -4,14 +4,14 @@
         <div class="tree-item" ng-class="selectedClass()" ng-click="selectNodeLabel(node)">
             <span class="tree-indentation-block"
                   ng-style="{ width: ((node.level || 0) + 1) * options.indentation + 'px' }"
-                  ng-dblclick="selectNodeHead($event)" ng-click="doNothing($event)"></span>
-            <span class="caret-container" ng-click="selectNodeHead($event)">
+                  ng-dblclick="selectNodeHead($event, node)" ng-click="doNothing($event)"></span>
+            <span class="caret-container" ng-click="selectNodeHead($event, node)">
                 <i class="tree-branch-caret"></i>
             </span>
             <i class="tree-branch-head" ng-class="[iBranchClass(), customIconClass()]"></i>
             <i class="tree-leaf-head" ng-class="customIconClass()"></i>
             <div class="tree-label" tree-transclude></div>
         </div>
-        <div tree-item ng-if="nodeExpanded()"></div>
+        <div tree-item ng-if="nodeExpanded(node)"></div>
     </li>
 </ul>

@@ -7,9 +7,9 @@
     .factory('Example', Example)
     .controller('exampleCtrl', exampleCtrl);
 
-  exampleCtrl.inject = ['Example'];
+  exampleCtrl.inject = ['$q', 'Example'];
 
-  function exampleCtrl(Example) {
+  function exampleCtrl($q, Example) {
     var vm = this;
 
     vm.treeOptions = {
@@ -20,6 +20,13 @@
       indentation: 20,
       equality: isSameNode
     };
+
+    vm.onExpand = onExpand;
+
+    function onExpand(node) {
+      console.log(node);
+      return $q.when([]);
+    }
 
     function isSameNode(newNode, existingNode) {
       return !!(newNode && existingNode) &&

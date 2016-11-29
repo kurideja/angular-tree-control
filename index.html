@@ -12,7 +12,12 @@
 </head>
 <body ng-app="example" ng-controller="exampleCtrl as vm">
 
-<div class="tree-classic" tree-control tree-model="vm.treeData" options="vm.treeOptions" order-by="name">
+<div class="tree-classic"
+     tree-control
+     tree-model="vm.treeData"
+     options="vm.treeOptions"
+     order-by="name"
+     on-expand="vm.onExpand(node)">
     {{ node.name }}
 </div>
 

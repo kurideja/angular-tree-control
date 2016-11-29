@@ -3,7 +3,7 @@ var concat = require('gulp-concat');
 
 gulp.task('scripts', ['templateCache'], function() {
   return gulp.src(['./src/*.module.js', './.tmp/**/*.js', './src/!(*module)*.js'])
-    .pipe(concat('angular-tree-control-v2.js'))
+    .pipe(concat('angular-tree-control.js'))
     .pipe(gulp.dest('./'));
 });
 
